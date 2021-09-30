@@ -20,7 +20,7 @@ namespace DeafioFrameworkAPI.Controllers
                 throw new ArgumentNullException(nameof(modelNumero));
             }
 
-            var result = ResponseNumero.DivisoresEPrimos(modelNumero.Numero);
+            var result = ResponseNumero.VerificaDivisoresEPrimos(modelNumero.Numero);
             if (result == null)
                 throw new ValidationException(result != null ? !string.IsNullOrEmpty(result.Mensagem) ? result.Mensagem : MENSAGEM_PADRAO_RESULT : MENSAGEM_PADRAO_RESULT);
             return result;

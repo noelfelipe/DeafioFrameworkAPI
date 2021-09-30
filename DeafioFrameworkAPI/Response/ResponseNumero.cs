@@ -26,7 +26,7 @@ namespace DeafioFrameworkAPI.Response
             return result;
         }
 
-        public static ResponseNumero DivisoresEPrimos(int num)
+        public static ResponseNumero VerificaDivisoresEPrimos(int num)
         {
             var divisores = new List<int>();
             var primos = new List<int>();
